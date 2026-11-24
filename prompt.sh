@@ -5,3 +5,5 @@ __git_branch() {
     [ -n "$b" ] && printf ' %s' "$b"
 }
 PS1='\[\e[32m\]\w\[\e[90m\]$(__git_branch)\[\e[00m\]\$ '
+
+[ -f /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
